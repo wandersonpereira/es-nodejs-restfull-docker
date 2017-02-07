@@ -1,0 +1,6 @@
+ntaskapi:
+ build: .
+ volumes:
+  - "./:/usr/src/app/"
+ ports:
+  - "3117:8080"
