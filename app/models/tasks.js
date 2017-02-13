@@ -1,3 +1,7 @@
+/**
+ * Modulo que faz o controle das Tasks
+ */
+
 module.exports = app => {
     
     return  {
