@@ -11,8 +11,8 @@ RUN cd /usr/src/app && npm install
 # Bundle app source 
 COPY . /usr/src/app 
 
-COPY bin /bin/
+#COPY /bin/sqlite3 /bin/
 
 EXPOSE 8080 
 
-CMD [ "npm" , "start", "/bin/sqlite3"] 
+CMD [ "npm" , "start"] 
