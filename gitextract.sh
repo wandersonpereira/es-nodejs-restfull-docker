@@ -103,7 +103,7 @@ if [ "x$1" = "x--no-src" ] ; then
 fi
 
 if [ "$(git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRT $hash_tag HEAD | grep -e ^$dirsrc)x" = "x" ] ; then
-    echo ""
+    echo "$(git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRT $hash_tag HEAD | grep -e ^$dirsrc)x"
     print_err "Nao ha arquivos para o pacote!"
     echo ""
     exit 1
