@@ -4,7 +4,7 @@
   "description": "Api de gestão de tarefas",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified 2 0 1 7\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node index.js"
   },
   "author": "Wanderson Ap. Pereira",
