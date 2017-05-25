@@ -24,6 +24,7 @@ module.exports = app => {
     app.routes('/tasks/:id')
 
     .get((req, res) => {
+	console.log(req.params);
       Tasks.findOne({where req.params})
       .then(value => {
         if (value) return res.json(value);
